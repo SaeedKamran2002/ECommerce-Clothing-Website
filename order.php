@@ -16,6 +16,8 @@
                 <th scope="col">Product Qunatity</th>
                 <th scope="col">Sell Price</th>
                 <th scope="col">Total Price</th>
+                <th scope="col">Payment Method</th>
+                <th  scope="col" colspan="3" class="text-center">Operations</th>
             </tr>
 
         </thead>
@@ -39,6 +41,7 @@
                     $productQty = $row['qty'];
                     $sellPrice = $row['sellPrice'];
                     $totalprice = $row['totalPrice'];
+                    $payment = $row['payment'];
                     $totalOrdersPrice += $totalprice;
 
 
@@ -50,6 +53,9 @@
                     echo " <td >{$productQty} </td>";
                     echo " <td > {$sellPrice}</td>";
                     echo " <td > {$totalprice}</td>";
+                    echo " <td > {$payment}</td>";
+                    echo " <td  class='text-center'>  <a href='deleteOrder.php?delete={$orderid}' class='btn btn-danger'> <i class='bi bi-trash'></i> DELETE</a> </td>";
+              
 
                     echo " </tr> ";
                 }
@@ -97,6 +103,11 @@
         }            
     ?>  
 </div>
+
+<div class="container text-center">
+            <center><a href="productView.php" class="btn btn-warning mt-5"> Back </a></center>
+        <div>
+
 
 
 <?php include "admin_footer.php" ?>

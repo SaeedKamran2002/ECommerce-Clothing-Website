@@ -22,8 +22,11 @@
 		$username=$_POST['username'];
 		$password=$_POST['pass'];
         $email = $_POST['email'];
+        $address = $_POST['address'];
+        $phoneNo = $_POST['phoneNo'];
 
-		$conn->query("Insert into users (username,email, password) values ('$username', '$email', '$password')");	
+
+		$conn->query("Insert into users (username,email,password,address,phoneNo) values ('$username', '$email', '$password' , '$address' , '$phoneNo')");	
         echo "<script type='text/javascript'>alert('SignUp Successfull!')</script>";
         header("Location: login.php");
 
@@ -59,6 +62,25 @@
                 
                     </div>
                     <br>
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="md-form mb-0">
+                                <input type="text" id="address" name="address" class="form-control" placeholder="Your Address" required>    
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="md-form mb-0">
+                                <input type="text" id="phoneNo" name="phoneNo" class="form-control" placeholder="Your PhoneNo:" required>    
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+
                     <div class="row">
                         <div class="col-md-12">
                             <div class="md-form mb-0">
@@ -67,6 +89,8 @@
                         </div>
                     </div>
                     <br>
+
+
       
                     <center><input type="submit" value = "SignUp" class="btn btn-primary" name="signup" id="signup"><center><br>
                     

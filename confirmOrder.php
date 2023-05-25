@@ -3,6 +3,7 @@
 require_once 'conn.php';
 
 $query2 = "SELECT * FROM cart";
+$payment = $_GET['param'];
 $view_cart = mysqli_query($conn, $query2);
 $totalPrice = 0;
 
@@ -17,11 +18,11 @@ while ($row = mysqli_fetch_assoc($view_cart)) {
 
     while ($row1 = mysqli_fetch_assoc($view_users)) {
         $sellPrice = $row1['product_sell_price'];
-        $totalPrice += ($sellPrice * $prqty);
+        $totalPrice = ($sellPrice * $prqty);
         $qty = $row1['product_qty'];
         $updatedQty = $qty - $prqty;
 
-        mysqli_query($conn, "INSERT INTO `orders` VALUES('', '$userId', '$prid', '$prqty', '$sellPrice', '$totalPrice')") or die(mysqli_error());
+        mysqli_query($conn, "INSERT INTO `orders` VALUES('', '$userId', '$prid', '$prqty', '$sellPrice', '$totalPrice', '$payment')") or die(mysqli_error());
         mysqli_query($conn, "UPDATE `product` SET product_qty = '{$updatedQty}' WHERE product_ID = $prid");
     }
 

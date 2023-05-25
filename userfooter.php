@@ -7,21 +7,21 @@
 
 <hr class="hr hr-blurry bg-dark" />
 
-    <footer class="bg-light text-center text-white">
+    <footer class="bg-light text-center">
 
-        <div class="container p-4 pb-0 bg-light">
+        <div class="container p-4 pb-0 bg-light text-white">
           <section class="mb-4">
             <a
               class="btn text-white btn-floating m-1"
               style="background-color: #3b5998;"
-              href="#"
+              href="https://www.facebook.com/"
               role="button"><i class="fa fa-facebook-f"></i
             ></a>
       
             <a
               class="btn text-white btn-floating m-1"
               style="background-color: #55acee;"
-              href="#"
+              href="https://twitter.com/"
               role="button"
               ><i class="fa fa-twitter"></i
             ></a>
@@ -30,7 +30,7 @@
             <a
               class="btn text-white btn-floating m-1"
               style="background-color: #dd4b39;"
-              href="#"
+              href="https://google.com/"
               role="button"
               ><i class="fa fa-google"></i
             ></a>
@@ -39,7 +39,7 @@
             <a
               class="btn text-white btn-floating m-1"
               style="background-color: #ac2bac;"
-              href="#"
+              href="https://instagram.com/"
               role="button"
               ><i class="fa fa-instagram"></i
             ></a>
@@ -47,7 +47,7 @@
             <a
               class="btn text-white btn-floating m-1"
               style="background-color: #0082ca;"
-              href="#"
+              href="https://linkedin.com/"
               role="button"
               ><i class="fa fa-linkedin"></i
             ></a>
@@ -55,7 +55,7 @@
             <a
               class="btn text-white btn-floating m-1"
               style="background-color: #333333;"
-              href="#"
+              href="https://github.com/"
               role="button"><i class="fa fa-github"></i></a>
           </section>
         </div>

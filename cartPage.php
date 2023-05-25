@@ -72,7 +72,7 @@
         <div class = "h5 text-danger text-center">Total Bill IS : <?php echo $totalPrice ?> </div>
 
         <br>
-        <a href = "confirmOrder.php"><center><button class="btn btn-danger">Confirm Order</button></center></a>
+        <a href = "checkout.php"><center><button class="btn btn-danger">Proceed To Checkout</button></center></a>
   </div>
 
 

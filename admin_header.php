@@ -50,6 +50,10 @@
                     <a class="nav-link" href="newAdmin.php">Create New Admin User</a>
                 </li>
 
+                <li class="nav-item">
+                    <a class="nav-link" href="myuser.php">Users</a>
+                </li>
+
                 
             </ul>
         </div>
